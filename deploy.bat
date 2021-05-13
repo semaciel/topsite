@@ -2,7 +2,7 @@
 title Deploy Script
 @echo Starting...
 # abort on errors
-set -e
+#set -e
 # build
 npm run build
 # navigate into the build output directory
