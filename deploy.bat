@@ -1,9 +1,9 @@
 @echo off
 title Deploy Script
 @echo Starting...
-# abort on errors
-#set -e
-# build
+@echo # build
+del node_modules -y
+npm i
 npm run build
 # navigate into the build output directory
 cd dist
