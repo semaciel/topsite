@@ -2,7 +2,7 @@
 title Deploy Script
 @echo Starting...
 @echo # build
-del node_modules -y
+del node_modules /q
 npm i
 npm run build
 # navigate into the build output directory
