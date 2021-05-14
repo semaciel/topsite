@@ -1,16 +1,16 @@
 @echo off
 title Deploy Script
-@echo Starting...
-@echo # build
+@echo >>> Starting...
+@echo >>> Del nodemodules
 del node_modules /q
 npm i
+@echo >>> npm run build
 npm run build
-# navigate into the build output directory
+@echo >>> navigate into the build output directory
 cd dist
-# if you are deploying to a custom domain
-# echo 'www.example.com' > CNAME
 git init
 git add -A
-git commit -m 'deploy'
+git commit -m 'deploy %date%'
 git push -f git@github.com:semaciel/topsite.git main:gh-pages
 cd -
+@echo Logged time = %time% %date%
