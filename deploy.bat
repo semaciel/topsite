@@ -12,7 +12,9 @@ cmd /c npm run build
 cd dist
 echo %cd%
 git init
-git add -A
+git remote add origin https://github.com/semaciel/topsite.git
+git branch -m master main
+git add .
 @echo All complete
 git commit -m 'deploy'
 @echo deploy message
