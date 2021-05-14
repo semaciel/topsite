@@ -19,4 +19,5 @@ git commit -m 'deploy'
 @echo deploy message
 git push -f git@github.com:semaciel/topsite.git main:gh-pages
 cd ..
+echo %cd%
 @echo Logged time = %time% %date%
