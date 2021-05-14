@@ -1,9 +1,9 @@
 @echo off
 title Deploy Script
 @echo --Starting...
-::@echo --Del nodemodules
-::del node_modules /q
-::npm i
+@echo --Del nodemodules
+del node_modules /q
+npm i
 echo %cd%
 @echo --npm run build
 cmd /c npm run build
